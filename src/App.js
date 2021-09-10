@@ -1,9 +1,12 @@
 import AddNew from "./AddNew";
 import Home from "./Home";
-import {Route, Link} from 'react-router-dom';
+import {Route} from 'react-router-dom';
 import Edit from "./Edit";
 
 function App() {
+
+
+
   return (
     <div>
       <Route exact path="/" component={Home} />
