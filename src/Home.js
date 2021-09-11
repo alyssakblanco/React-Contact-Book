@@ -36,19 +36,42 @@ function Home(){
   //   console.log(contact)
   // }
 
+  const [isActive, setActive] = useState("");
+  const [currentId, setId] = useState(0);
+  //console.log('before ' + currentId);
+
+  
   //delete task
-  const deleteContact = (id) => {
+  function deleteContact(id) {
+    // console.log('during ' + currentId);
     console.log('delete', id)
+    //look up filter
+    setContacts(contacts.filter((contacts) => contacts.id !== id))
+  }
+
+  function toggleModal(id) {
+    setActive(!isActive);
+    setId(id);
+    // console.log('after ' + id);
+    // console.log('after ' + currentId);
   }
 
   return (
     <div>
       
       <h1>VISA Contact List</h1>
+
+      {contacts.length > 0 ? (<ListItem contacts={contacts} onDelete={toggleModal}/>) 
+      : ('Your Contact Book is Empty')}
       
-      <ListItem contacts={contacts} onDelete={deleteContact}/>
 
       <AddButton/>
+
+      <div className={isActive ? "show" : "hide"}>
+        <h3>delete contact?</h3>
+        <button onClick={toggleModal}>no</button>
+        <button onClick={() => {deleteContact(currentId); toggleModal()}}>yes</button>
+      </div>
 
     </div>
   );

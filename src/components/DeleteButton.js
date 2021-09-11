@@ -1,9 +1,9 @@
 import React from 'react'
 
- export default function TrashDelete2() {
+ export default function DeleteButton({onDelete, id}) {
 
     return (
-        <>
+        <div onClick={() => onDelete(id)}>
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" datareactroot="">
             <path strokeLinejoin="round" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="1" stroke="#325e97" fill="none" d="M15.69 21.82C15.69 21.82 15.68 21.83 15.69 21.82C13.56 21.24 12 19.3 12 17C12 15.87 12.37 14.83 13 14C13.91 12.79 15.37 12 17 12C17.14 12 17.28 12.01 17.42 12.02L18 8H4L5.88 21.14C5.95 21.63 6.37 22 6.87 22H15.13C15.34 22 15.53 21.94 15.69 21.82Z"></path>
             <path strokeLinejoin="round" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="1" stroke="#325e97" d="M2.5 8H19.5"></path>
@@ -15,6 +15,6 @@ import React from 'react'
             <path strokeLinejoin="round" strokeMiterlimit="10" strokeWidth="1" stroke="#325e97" d="M14.88 14.88L19.12 19.12"></path>
             <path strokeLinejoin="round" strokeMiterlimit="10" strokeWidth="1" stroke="#325e97" d="M19.12 14.88L14.88 19.12"></path>
             </svg>
-        </>
+        </div>
     )
 }
