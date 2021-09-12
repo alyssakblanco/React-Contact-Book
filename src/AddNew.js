@@ -1,31 +1,38 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import HomeButton from './components/HomeButton';
 
- 
+function AddNew(props) {
 
-function AddNew() {
+    //form helper functions
+    const [formData, setFormData] = useState({
+        fname: "",
+        lname: "",
+        num: "",
+        email: ""
+    })
+    const changeData = e => {
+        setFormData({...formData, [e.target.name]: e.target.value})
+    }
 
-    const [fname, setFname] = useState('');
-    const [lname, setLname] = useState('');
-    const [num, setNumber] = useState('');
-    const [email, setEmail] = useState('');
+    //submit function
+    const addContact = (e) => {
+        props.addContact(formData)
+        props.history.push("/")
+    }
 
-    
-        return (
-            <div>
-                <h1>Add New</h1>
-                <form id="addNew">
-                    <input type="text" placeholder="First Name" value={fname} onChange={(e) => setFname(e.target.value)}/>
-                    <input type="text" placeholder="Last Name" value={lname} onChange={(e) => setLname(e.target.value)}/>
-                    <input type="text" placeholder="Phone Number" value={num} onChange={(e) => setNumber(e.target.value)}/>
-                    <input type="text" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)}/>
-
-                    <button type="submit">Add</button>
-                </form>
-                <HomeButton />
-            </div>
-        )
-    
+    return (
+        <div>
+            <h1>Add New</h1>
+            <form id="addNew" onSubmit={(e) => addContact(e)}>
+                <input type="text" name='fname' placeholder="First Name" value={formData.fname} onChange={changeData}/>
+                <input type="text" name='lname' placeholder="Last Name" value={formData.lname} onChange={changeData}/>
+                <input type="text" name='num' placeholder="Phone Number" value={formData.num}onChange={changeData}/>
+                <input type="text" name='email' placeholder="Email" value={formData.email} onChange={changeData}/>
+                <button type="submit">Add Contact</button>
+            </form>
+            <HomeButton />
+        </div>
+    )  
 }
 
 export default AddNew
