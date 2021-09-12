@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import ListItem from "./components/ListItem";
 import AddButton from "./components/AddButton";
 
-function Home({contacts, setContacts, addTask}){
+function Home({contacts, setContacts, addContact, changeContact}){
 
   const [isActive, setActive] = useState("");
   const [currentId, setId] = useState(0);
@@ -26,10 +26,10 @@ function Home({contacts, setContacts, addTask}){
       
       <h1>VISA Contact List</h1>
 
-      {contacts.length > 0 ? (<ListItem contacts={contacts} onDelete={toggleModal}/>) 
+      {contacts.length > 0 ? (<ListItem contacts={contacts} onDelete={toggleModal} changeContact={changeContact}/>) 
       : ('Your Contact Book is Empty')}
       
-      <Link to={{pathname: "/add", data: {addTask: addTask}}}>
+      <Link to={{pathname: "/add", data: {addContact: addContact}}}>
       <AddButton/>
       </Link>
 

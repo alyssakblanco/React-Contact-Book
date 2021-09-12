@@ -1,8 +1,10 @@
-import React, { useState} from 'react';
+import React, {useState} from 'react';
+import {Link} from 'react-router-dom';
+
 import EditButton from "./EditButton";
 import DeleteButton from "./DeleteButton";
 
-function ListItem({contacts, onDelete}) {
+function ListItem({contacts, onDelete, changeContact}) {
 
 
     const [selected, setSelected] = useState(null);
@@ -20,9 +22,13 @@ function ListItem({contacts, onDelete}) {
             {contacts.map((item, i) => (
                 <div className="listItem" key={item.id}>
                     <div>
-                        <h2 className="pointer" onClick={() => toggle(i)}>{item.firstName} {item.lastName}</h2>
-                        <p>{item.phone}</p>
+                        <h2 className="pointer" onClick={() => toggle(i)}>{item.fName} {item.lName}</h2>
+                        <p>{item.num}</p>
+                        
+                        <Link to={{pathname: '/edit', data:{contact: item, changeContact: changeContact}}}>
                         <EditButton />
+                        </Link>
+                        
                         <DeleteButton onDelete={onDelete} id={item.id}/>
                     </div>
                     <div className={selected === i ? 'open' : 'closed'}>

@@ -10,23 +10,23 @@ function App() {
     [
         {
             id: 1,
-            firstName:"Alyssa",
-            lastName:"Blanco",
-            phone:"(813)480-2369",
+            fName:"Alyssa",
+            lName:"Blanco",
+            num:"(813)480-2369",
             email:"alyssakblanco@outlook.com"
         },
         {
             id: 2,
-            firstName:"Peter",
-            lastName:"Parker",
-            phone:"(555)123-9876",
+            fName:"Peter",
+            lName:"Parker",
+            num:"(555)123-9876",
             email:"notspiderman@outlook.com"
         },
         {
             id: 3,
-            firstName:"Elon",
-            lastName:"Musk",
-            phone:"(555)321-6789",
+            fName:"Elon",
+            lName:"Musk",
+            num:"(555)321-6789",
             email:"rocketman@outlook.com"
         }
     ] 
@@ -36,20 +36,40 @@ function App() {
   const addContact = (newContact) => {  
     const contact = {
       id: Math.random(),
-      firstName: newContact.fname,
-      lastName: newContact.lname,
-      phone: newContact.num,
+      fName: newContact.fName,
+      lName: newContact.lName,
+      num: newContact.num,
       email: newContact.email
     }
     setContacts((oldArr) => [...oldArr, contact])
   }
 
+  //Change Contact
+  const changeContact = (update) => {  
+    //console.log(update.id)
+    const contact = contacts.map((item) => {
+      if(item.id === update.id){
+        const updatedContact = {
+          id: update.id,
+          fName: update.fName,
+          lName: update.lName,
+          num: update.num,
+          email: update.email
+        };
+        return updatedContact;
+      }
+      return item;
+    });
+
+    setContacts(contact)
+  }
+
 
   return (
     <div>
-      <Route  exact path="/" render={(props) => <Home setContacts={setContacts} contacts={contacts} {...props} />}/>
+      <Route exact path="/" render={(props) => <Home {...props} contacts={contacts} setContacts={setContacts} />}/>
       <Route exact path="/add" render={(props) => <AddNew {...props} addContact={addContact} />}/>
-      <Route exact path="/edit" render={(props) => <Edit {...props} />} />
+      <Route exact path="/edit" render={(props) => <Edit {...props} changeContact={changeContact} />}/>
     </div>
   );
 }
