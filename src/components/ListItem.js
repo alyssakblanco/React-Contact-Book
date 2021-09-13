@@ -25,8 +25,6 @@ function ListItem({contacts, onDelete, changeContact}) {
                     </div>
                     <div className={selected === i ? 'open' : 'closed'}>
                         <p>{item.email}</p>
-                        
-                        
                     </div>
                     <div id="btnHolder">
                             <Link to={{pathname: '/edit', data:{contact: item, changeContact: changeContact}}}>
@@ -35,8 +33,7 @@ function ListItem({contacts, onDelete, changeContact}) {
                             
                             <DeleteButton onDelete={onDelete} id={item.id}/>
                         </div>
-                   
-                    
+
                 </div>
             ))}
               
