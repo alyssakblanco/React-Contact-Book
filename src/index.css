@@ -1,3 +1,12 @@
+/* ALL */
+:root {
+  --visa-blue: #182259;
+  --visa-gold: #F2A007;
+  --white: #F2F2F2;
+  --opaque: rgba(255,255,255,0.25);
+  --opaque2: rgba(255,255,255,0.9);
+}
+
 *{
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -8,24 +17,70 @@
 }
 
 body{
-  background-color: aquamarine;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  padding-left: 20%;
-  padding-right: 20%;
+  background-color: var(--visa-blue);
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  padding-left: 30%;
+  padding-right: 30%;
 }
 
-
-
-.listItem{
-  background-color: azure;
-  margin-top: 3%;
-  padding: 3%;
+h1{
+  color: var(--white);
+  margin-bottom: 5vh;
+  font-size: 3vw;
+  font-weight: bold;
 }
 
-#add{
-  float: right;
-  margin-top: 3%;
+h2{
+  color: var(--white);
+  font-size: 2.5vw;
+  font-weight:600;
+  margin-bottom: 0.5vw;
+}
+
+p{
+  color: var(--white);
+  font-size: 1.75vw;
+  font-weight:350;
+}
+
+button{
+  background-color: var(--visa-gold);
+  color: var(--white);
+  font-size: 1.75vw;
+  cursor: pointer;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.relative{
+  position: relative;
+}
+
+.topRight{
+  position: absolute;
+  top: 0.5vw;
+  right: 0;
+  width: 3.5vw;
+}
+
+/* HOME */
+.show{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width:100vw;
+  height: 100vh;
+  background-color: var(--opaque2);
+}
+
+.hide{
+  display: none;
 }
 
 .closed{
@@ -36,13 +91,92 @@ body{
   display: block;
 }
 
-.pointer{
-  cursor: pointer;
+.addButton{
+  width: 6vw;
+  float:right;
+  margin-top: 5vh;
 }
 
-.show{
-  display: block;
+#modal{
+  position: relative;
+  width: auto;
+  height: auto;
+  background-color: var(--visa-blue);
+  border-radius: 10px;
+  padding: 5vw;
 }
-.hide{
-  display: none;
+
+#btnHolder{
+  width: 100%;
+  display: flex;
+  justify-content: right;
 }
+
+.icon{
+  height: 3vw;
+  width:3vw;
+}
+
+.right{
+  margin-left: 1vw;
+}
+
+#yes{
+ width: 50%;
+ margin-top:5%;
+ margin-left:25%;
+ margin-bottom:2%;
+ background-color: var(--visa-gold);
+ color: var(--white);
+ border: none;
+ border-radius: 5px;
+ padding: 1%;
+}
+
+#no{
+  width: 50%;
+  margin-left:25%;
+  background-color: var(--visa-blue);
+  color: var(--white);
+  border: none;
+  font-size: 1.5vw;
+}
+
+#close{
+  position: absolute;
+  top: -8%;
+  right: -3%;
+  width: 4vw;
+}
+
+.listItem{
+  background-color: var(--opaque);
+  margin-top: 3%;
+  padding: 4%;
+  border-radius: 10px;
+}
+
+
+/* FORMS */
+
+input {
+  width: 96%;
+  background-color: var(--opaque);
+  border: none;
+  border-radius: 5px;
+  font-size: 1.75vw;
+  padding: 2%;
+  color: var(--white);
+  margin-bottom: 1vw;
+}
+
+.submit{
+  width: 100%;
+  padding: 2%;
+  border: none;
+  border-radius: 5px;
+  margin-top: 2vw;
+}
+
+
+

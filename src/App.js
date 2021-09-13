@@ -46,7 +46,6 @@ function App() {
 
   //Change Contact
   const changeContact = (update) => {  
-    //console.log(update.id)
     const contact = contacts.map((item) => {
       if(item.id === update.id){
         const updatedContact = {
@@ -60,7 +59,6 @@ function App() {
       }
       return item;
     });
-
     setContacts(contact)
   }
 

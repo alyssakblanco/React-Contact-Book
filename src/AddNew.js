@@ -21,16 +21,16 @@ function AddNew(props) {
     }
 
     return (
-        <div>
-            <h1>Add New</h1>
+        <div className="relative">
+            <h1>New Contact</h1>
             <form className="form" onSubmit={(e) => addContact(e)}>
                 <input type="text" name='fName' placeholder="First Name" value={formData.fName} onChange={changeData}/>
                 <input type="text" name='lName' placeholder="Last Name" value={formData.lName} onChange={changeData}/>
                 <input type="text" name='num' placeholder="Phone Number" value={formData.num}onChange={changeData}/>
                 <input type="text" name='email' placeholder="Email" value={formData.email} onChange={changeData}/>
-                <button type="submit">Add Contact</button>
+                <button className="submit" type="submit">Save</button>
             </form>
-            <HomeButton />
+            <div className="topRight"><HomeButton /></div>
         </div>
     )  
 }
