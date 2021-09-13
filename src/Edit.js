@@ -19,7 +19,7 @@ function Edit(props) {
     const changeContact = (e) => {
         e.preventDefault();
         props.changeContact(formData)
-        props.history.push("/")
+        props.history.push("/VISA_ContactList/")
     }
     
     return (

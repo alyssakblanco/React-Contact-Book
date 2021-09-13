@@ -17,7 +17,7 @@ function AddNew(props) {
     //submit function
     const addContact = (e) => {
         props.addContact(formData)
-        props.history.push("/")
+        props.history.push("/VISA_ContactList/")
     }
 
     return (
