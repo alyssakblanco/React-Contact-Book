@@ -65,9 +65,9 @@ function App() {
 
   return (
     <div>
-      <Route exact path="/VISA_ContactList/" render={(props) => <Home {...props} contacts={contacts} setContacts={setContacts} />}/>
-      <Route exact path="/VISA_ContactList/add" render={(props) => <AddNew {...props} addContact={addContact} />}/>
-      <Route exact path="/VISA_ContactList/edit" render={(props) => <Edit {...props} changeContact={changeContact} />}/>
+      <Route exact path="/" render={(props) => <Home {...props} contacts={contacts} setContacts={setContacts} />}/>
+      <Route exact path="/add" render={(props) => <AddNew {...props} addContact={addContact} />}/>
+      <Route exact path="/edit" render={(props) => <Edit {...props} changeContact={changeContact} />}/>
     </div>
   );
 }

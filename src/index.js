@@ -7,7 +7,7 @@ import {BrowserRouter} from 'react-router-dom';
 
 ReactDOM.render(
   <React.StrictMode>
-   <BrowserRouter>
+   <BrowserRouter basename="/VISA_ContactList">
     <App />
    </BrowserRouter> 
   </React.StrictMode>,
