@@ -31,7 +31,7 @@ function ListItem({contacts, onDelete, changeContact}) {
                             <EditButton />
                             </Link>
                             
-                            <DeleteButton onDelete={onDelete} id={item.id}/>
+                            <DeleteButton onDelete={onDelete} id={item.id} fName={item.fName}/>
                         </div>
 
                 </div>

@@ -8,17 +8,21 @@ function Home({contacts, setContacts, addContact, changeContact}){
 
   const [isActive, setActive] = useState("");
   const [currentId, setId] = useState("");
+  const [currentName, setName] = useState("");
 
   //Delete Task
   function deleteContact(id) {
     console.log('delete', id)
     setContacts(contacts.filter((contacts) => contacts.id !== id))
+    
   }
 
   //Modal function
-  function toggleModal(id) {
+  function toggleModal(id, fName) {
     setActive(!isActive);
     setId(id);
+    setName(fName)
+    console.log(fName)
   }
 
   //MAIN APP VIEW
@@ -37,7 +41,7 @@ function Home({contacts, setContacts, addContact, changeContact}){
       <div className={isActive ? "show" : "hide"}>
         <div id="modal">
           <div id="close" onClick={() => toggleModal()}><HomeButton /></div>
-          <p>Are you sure you want to delete this contact?</p>
+          <p>Are you sure you want to remove {currentName} from your contacts?</p>
           <button id="yes" onClick={() => {deleteContact(currentId); toggleModal()}}>Yes, delete</button>
           <button id="no" onClick={() => toggleModal()}>No, keep contact</button>
         </div> 
