@@ -33,14 +33,14 @@ h1{
 
 h2{
   color: var(--white);
-  font-size: 2.5vw;
+  font-size: 2.25vw;
   font-weight:600;
   margin-bottom: 0.5vw;
 }
 
 p{
   color: var(--white);
-  font-size: 1.75vw;
+  font-size: 1.5vw;
   font-weight:350;
 }
 
@@ -92,9 +92,10 @@ button{
 }
 
 .addButton{
-  width: 6vw;
-  float:right;
-  margin-top: 5vh;
+  width: 4vw;
+  position: absolute;
+  top:6vh;
+  right:30%;
 }
 
 #modal{
@@ -113,8 +114,8 @@ button{
 }
 
 .icon{
-  height: 3vw;
-  width:3vw;
+  height: 2.5vw;
+  width:2.5vw;
 }
 
 .right{
@@ -152,7 +153,9 @@ button{
 .listItem{
   background-color: var(--opaque);
   margin-top: 3%;
-  padding: 4%;
+  padding: 2%;
+  padding-left: 4%;
+  padding-right: 4%;
   border-radius: 10px;
 }
 
