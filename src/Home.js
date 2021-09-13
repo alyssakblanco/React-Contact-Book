@@ -34,7 +34,7 @@ function Home({contacts, setContacts, addContact, changeContact}){
       {contacts.length > 0 ? (<ListItem contacts={contacts} onDelete={toggleModal} changeContact={changeContact}/>) 
       : ('Your Contact Book is Empty')}
       
-      <Link to={{pathname: "/add", data: {addContact: addContact}}}>
+      <Link to={{pathname: "/VISA_ContactList/add", data: {addContact: addContact}}}>
       <AddButton/>
       </Link>
 
