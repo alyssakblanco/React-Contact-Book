@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/VISA_ContactList/static/css/main.51e05ee3.chunk.css",
-    "main.js": "/VISA_ContactList/static/js/main.383ab2ac.chunk.js",
-    "main.js.map": "/VISA_ContactList/static/js/main.383ab2ac.chunk.js.map",
-    "runtime-main.js": "/VISA_ContactList/static/js/runtime-main.e04bc0ff.js",
-    "runtime-main.js.map": "/VISA_ContactList/static/js/runtime-main.e04bc0ff.js.map",
-    "static/js/2.8467c986.chunk.js": "/VISA_ContactList/static/js/2.8467c986.chunk.js",
-    "static/js/2.8467c986.chunk.js.map": "/VISA_ContactList/static/js/2.8467c986.chunk.js.map",
-    "static/js/3.46fda58e.chunk.js": "/VISA_ContactList/static/js/3.46fda58e.chunk.js",
-    "static/js/3.46fda58e.chunk.js.map": "/VISA_ContactList/static/js/3.46fda58e.chunk.js.map",
-    "index.html": "/VISA_ContactList/index.html",
-    "static/css/main.51e05ee3.chunk.css.map": "/VISA_ContactList/static/css/main.51e05ee3.chunk.css.map",
-    "static/js/2.8467c986.chunk.js.LICENSE.txt": "/VISA_ContactList/static/js/2.8467c986.chunk.js.LICENSE.txt"
+    "main.css": "/React-Contact-Book/static/css/main.dc981bde.chunk.css",
+    "main.js": "/React-Contact-Book/static/js/main.7a39231b.chunk.js",
+    "main.js.map": "/React-Contact-Book/static/js/main.7a39231b.chunk.js.map",
+    "runtime-main.js": "/React-Contact-Book/static/js/runtime-main.ea250642.js",
+    "runtime-main.js.map": "/React-Contact-Book/static/js/runtime-main.ea250642.js.map",
+    "static/js/2.8467c986.chunk.js": "/React-Contact-Book/static/js/2.8467c986.chunk.js",
+    "static/js/2.8467c986.chunk.js.map": "/React-Contact-Book/static/js/2.8467c986.chunk.js.map",
+    "static/js/3.46fda58e.chunk.js": "/React-Contact-Book/static/js/3.46fda58e.chunk.js",
+    "static/js/3.46fda58e.chunk.js.map": "/React-Contact-Book/static/js/3.46fda58e.chunk.js.map",
+    "index.html": "/React-Contact-Book/index.html",
+    "static/css/main.dc981bde.chunk.css.map": "/React-Contact-Book/static/css/main.dc981bde.chunk.css.map",
+    "static/js/2.8467c986.chunk.js.LICENSE.txt": "/React-Contact-Book/static/js/2.8467c986.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.e04bc0ff.js",
+    "static/js/runtime-main.ea250642.js",
     "static/js/2.8467c986.chunk.js",
-    "static/css/main.51e05ee3.chunk.css",
-    "static/js/main.383ab2ac.chunk.js"
+    "static/css/main.dc981bde.chunk.css",
+    "static/js/main.7a39231b.chunk.js"
   ]
 }
