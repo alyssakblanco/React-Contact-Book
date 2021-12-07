@@ -33,10 +33,11 @@ function Home({contacts, setContacts, addContact, changeContact}){
 
       {contacts.length > 0 ? (<ListItem contacts={contacts} onDelete={toggleModal} changeContact={changeContact}/>) 
       : ('Your Contact Book is Empty')}
-      
-      <Link to={{pathname: "/VISA_ContactList/add", data: {addContact: addContact}}}>
+     
+      <Link to={{pathname: "/React-Contact-Book/add", data: {addContact: addContact}}}>
       <AddButton/>
       </Link>
+
 
       <div className={isActive ? "show" : "hide"}>
         <div id="modal">
@@ -48,6 +49,7 @@ function Home({contacts, setContacts, addContact, changeContact}){
       </div>
 
     </div>
+    
   );
 }
 

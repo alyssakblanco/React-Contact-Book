@@ -27,7 +27,7 @@ function ListItem({contacts, onDelete, changeContact}) {
                         <p>{item.email}</p>
                     </div>
                     <div id="btnHolder">
-                            <Link to={{pathname: '/VISA_ContactList/edit', data:{contact: item, changeContact: changeContact}}}>
+                            <Link to={{pathname: '/React-Contact-Book/edit', data:{contact: item, changeContact: changeContact}}}>
                             <EditButton />
                             </Link>
                             

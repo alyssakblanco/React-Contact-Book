@@ -1,7 +1,7 @@
 /* ALL */
 :root {
-  --visa-blue: #182259;
-  --visa-gold: #F2A007;
+  --blue: #182259;
+  --gold: #F2A007;
   --white: #F2F2F2;
   --opaque: rgba(255,255,255,0.25);
   --opaque2: rgba(255,255,255,0.9);
@@ -17,7 +17,7 @@
 }
 
 body{
-  background-color: var(--visa-blue);
+  background-color: var(--blue);
   padding-top: 5vh;
   padding-bottom: 5vh;
   padding-left: 30%;
@@ -45,7 +45,7 @@ p{
 }
 
 button{
-  background-color: var(--visa-gold);
+  background-color: var(--gold);
   color: var(--white);
   font-size: 1.75vw;
   cursor: pointer;
@@ -102,7 +102,7 @@ button{
   position: relative;
   width: auto;
   height: auto;
-  background-color: var(--visa-blue);
+  background-color: var(--blue);
   border-radius: 10px;
   padding: 5vw;
 }
@@ -127,7 +127,7 @@ button{
  margin-top:5%;
  margin-left:25%;
  margin-bottom:2%;
- background-color: var(--visa-gold);
+ background-color: var(--gold);
  color: var(--white);
  border: none;
  border-radius: 5px;
@@ -137,7 +137,7 @@ button{
 #no{
   width: 50%;
   margin-left:25%;
-  background-color: var(--visa-blue);
+  background-color: var(--blue);
   color: var(--white);
   border: none;
   font-size: 1.5vw;

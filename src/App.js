@@ -1,5 +1,5 @@
 import {useState} from "react";
-import {Route} from 'react-router-dom';
+import {BrowserRouter, Route} from 'react-router-dom';
 import AddNew from "./AddNew";
 import Home from "./Home";
 import Edit from "./Edit";
@@ -65,9 +65,12 @@ function App() {
 
   return (
     <div>
-      <Route exact path="/VISA_ContactList/" render={(props) => <Home {...props} contacts={contacts} setContacts={setContacts} />}/>
-      <Route exact path="/VISA_ContactList/add" render={(props) => <AddNew {...props} addContact={addContact} />}/>
-      <Route exact path="/VISA_ContactList/edit" render={(props) => <Edit {...props} changeContact={changeContact} />}/>
+      <BrowserRouter>
+      <Route exact path="/React-Contact-Book/" render={(props) => <Home {...props} contacts={contacts} setContacts={setContacts} />}/>
+      <Route exact path="/React-Contact-Book/add" render={(props) => <AddNew {...props} addContact={addContact} />}/>
+      <Route exact path="/React-Contact-Book/edit" render={(props) => <Edit {...props} changeContact={changeContact} />}/>
+      </BrowserRouter>
+      
     </div>
   );
 }
