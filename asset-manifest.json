@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/React-Contact-Book/static/css/main.dc981bde.chunk.css",
-    "main.js": "/React-Contact-Book/static/js/main.7a39231b.chunk.js",
-    "main.js.map": "/React-Contact-Book/static/js/main.7a39231b.chunk.js.map",
+    "main.js": "/React-Contact-Book/static/js/main.0c05313a.chunk.js",
+    "main.js.map": "/React-Contact-Book/static/js/main.0c05313a.chunk.js.map",
     "runtime-main.js": "/React-Contact-Book/static/js/runtime-main.ea250642.js",
     "runtime-main.js.map": "/React-Contact-Book/static/js/runtime-main.ea250642.js.map",
     "static/js/2.8467c986.chunk.js": "/React-Contact-Book/static/js/2.8467c986.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.ea250642.js",
     "static/js/2.8467c986.chunk.js",
     "static/css/main.dc981bde.chunk.css",
-    "static/js/main.7a39231b.chunk.js"
+    "static/js/main.0c05313a.chunk.js"
   ]
 }
