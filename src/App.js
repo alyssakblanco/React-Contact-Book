@@ -12,7 +12,7 @@ function App() {
             id: 1,
             fName:"Alyssa",
             lName:"Blanco",
-            num:"(813)480-2369",
+            num:"(813)123-4567",
             email:"alyssakblanco@outlook.com"
         },
         {
